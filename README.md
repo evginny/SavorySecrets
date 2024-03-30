@@ -3,7 +3,7 @@
 The Savory Secrets app is a user-friendly digital recipe book that lets users store recipes by 
 category. Users can easily add, edit, delete, and search within each category, making recipe 
 organization a breeze.  
-![scewwnshot](vaqay/budget.png)
+![scewwnshot](ss_pics/main.png)
 ## Functionality
 ### Add Recipes:
    * With the "Add" function, users can store their favorite recipes. Users are able to 
