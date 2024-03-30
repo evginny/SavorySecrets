@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Savory Secrets</string>
+    <string name="details">Details</string>
+    <string name="categories_fragment_label">Savory Secrets</string>
+    </resources>

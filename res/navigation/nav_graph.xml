@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categories_fragment">
+
+    <fragment
+        android:id="@+id/list_fragment"
+        android:name="com.zybooks.savorysecrets.fragment.ListFragment"
+        android:label="Recipes">
+        <action
+            android:id="@+id/show_item_detail"
+            app:destination="@id/detail_fragment" />
+        <action
+            android:id="@+id/action_list_to_add_recipe"
+            app:destination="@id/add_recipe_fragment" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.zybooks.savorysecrets.fragment.DetailFragment"
+        android:label="Recipe Details"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="recipe_id"
+            android:defaultValue="1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailFragment_to_editRecipeFragment"
+            app:destination="@id/editRecipeFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_listFragment"
+            app:destination="@id/list_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categories_fragment"
+        android:name="com.zybooks.savorysecrets.fragment.CategoriesFragment"
+        android:label="@string/categories_fragment_label">
+        <action
+            android:id="@+id/action_categories_to_list"
+            app:destination="@id/list_fragment" />
+        <action
+            android:id="@+id/action_categories_to_add_recipe"
+            app:destination="@id/add_recipe_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_recipe_fragment"
+        android:name="com.zybooks.savorysecrets.fragment.AddRecipeFragment"
+        android:label="Add Recipe">
+        <action
+            android:id="@+id/action_add_to_list"
+            app:destination="@id/list_fragment" />
+        <action
+            android:id="@+id/action_go_back_to_list_fragment"
+            app:destination="@id/list_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editRecipeFragment"
+        android:name="com.zybooks.savorysecrets.fragment.EditRecipeFragment"
+        android:label="Edit Recipe" >
+        <argument
+            android:name="recipe_id"
+            app:argType="com.zybooks.savorysecrets.entity.Recipe" />
+    </fragment>
+
+
+
+</navigation>

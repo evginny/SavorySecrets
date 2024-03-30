@@ -1,0 +1,9 @@
+<resources>
+    <color name="white">#FFF</color>
+    <color name="gray">#EEE</color>
+    <color name="accentColor">#42A5F5</color>
+    <color name="dark_blue">#0f46a1</color>
+    <color name="light_blue">#90caf9</color>
+    <color name="dark_green">#353536</color>
+    <color name="darker_green">#353536</color>
+</resources>
