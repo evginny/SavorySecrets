@@ -22,7 +22,7 @@ public class RecipeViewModel extends AndroidViewModel {
     }
 
     public LiveData<List<Recipe>> getRecipesByName(String name) {
-        // Implement the method to filter the recipes by name using Room or whatever you're using
+        // Implement the method to filter the recipes by name using Room 
         return recipeRepository.getRecipesByName(name);
     }
 
